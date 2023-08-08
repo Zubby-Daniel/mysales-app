@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Zubby Daniel" />
+    <meta
+      name="description"
+      content="The official website for the Iyke Ecommerce Business"
+    />
+    <title>PURCHASE ORDER</title>
+
+    <!-- <link rel="icon" href="iconImage/9ja.png" type="iconImage/x-icon" /> -->
+    <link rel="stylesheet" href="biz.css" />
+  </head>
+  <body>
+    <main>
+      <h1>jetchamp sports</h1>
+      <article class="article__1">
+        <section class="article__1-sectionOne">
+          <div class="article__1-sectionOneDate">
+            <input type="date" name="" class="inpu" />
+          </div>
+
+          <div class="order__number">
+            <h3>Order Number</h3>
+            <input type="number" name="" class="order__numberInput" />
+          </div>
+
+          <div class="vendor">
+            <h3>vendor</h3>
+            <select class="slt">
+              <option class="optn">--SELECT--</option>
+              <option class="optn">OK & Sons</option>
+              <option class="optn">Pet & Peters</option>
+              <option class="optn">The Jarings</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="article__1-sectionTwo">
+          <h2>purchase order</h2>
+          <div class="article__1-sectionTwoP">
+            <div>
+              <span>ship via</span>
+              <select class="slt">
+                <option class="optn">--SELECT--</option>
+                <option class="optn">OverNightAir</option>
+                <option class="optn">Air Peace</option>
+                <option class="optn">Peru Air Ways</option>
+              </select>
+            </div>
+
+            <div>
+              <span>ship to </span
+              ><textarea>alasia, lagos state,nigeria</textarea>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Product Section -->
+      <article class="product__article">
+        <h2>item detail</h2>
+
+        <section class="product__section">
+          <div>
+            <small>PRODUCT</small>
+            <span>
+              <input
+                onclick="prod1()"
+                id="ftbl"
+                type="checkbox"
+                name=""
+                class="inpu"
+              />Football
+            </span>
+          </div>
+
+          <div>
+            <small>QUANTITY</small>
+            <input
+              oninput="prodqty1()"
+              type="number"
+              name=""
+              id="qty"
+              class="inpu quantity"
+            />
+          </div>
+
+          <div>
+            <small>PRICE</small>
+            <input
+              type="number"
+              name=""
+              id="pri"
+              class="inpu quantity"
+              disabled
+            />
+          </div>
+
+          <div>
+            <small>COST</small>
+            <input
+              type="number"
+              name=""
+              class="inpu quantity"
+              id="cst"
+              disabled
+            />
+          </div>
+        </section>
+
+        <!-- Product2 -->
+
+        <section class="product__section">
+          <div>
+            <small>PRODUCT</small>
+            <span>
+              <input
+                onclick="prod2()"
+                id="bsbl"
+                type="checkbox"
+                name=""
+                class="inpu"
+              />Baseball</span
+            >
+          </div>
+
+          <div>
+            <small>QUANTITY</small>
+            <input
+              oninput="prodqty2()"
+              type="number"
+              name=""
+              id="qtty"
+              class="inpu quantity"
+            />
+          </div>
+
+          <div>
+            <small>PRICE</small>
+            <input
+              type="number"
+              name=""
+              id="pr"
+              class="inpu quantity"
+              disabled
+            />
+          </div>
+
+          <div>
+            <small>COST</small>
+            <input
+              type="number"
+              name=""
+              id="cs"
+              class="inpu quantity"
+              disabled
+            />
+          </div>
+        </section>
+
+        <!-- Product3 -->
+
+        <section class="product__section">
+          <div>
+            <small>PRODUCT</small>
+            <span>
+              <input
+                id="bskbl"
+                type="checkbox"
+                name=""
+                class="inpu"
+              />Basketball</span
+            >
+          </div>
+
+          <div>
+            <small>QUANTITY</small>
+            <input type="number" name="" id="bskqty" class="inpu quantity" />
+          </div>
+
+          <div>
+            <small>PRICE</small>
+            <input
+              type="number"
+              name=""
+              id="price"
+              class="inpu quantity"
+              disabled
+            />
+          </div>
+
+          <div>
+            <small>COST</small>
+            <input
+              type="number"
+              name=""
+              id="cost"
+              class="inpu quantity"
+              disabled
+            />
+          </div>
+        </section>
+      </article>
+
+      <!-- Total Section -->
+      <article class="totals__article">
+        <h2>Total</h2>
+
+        <section class="main__section">
+          <section>
+            <div class="tot__item">
+              <span>items</span>&nbsp;&nbsp;&nbsp;<input
+                type=""
+                name=""
+                id="TotalItems"
+                class="inpu tot__input"
+              />
+            </div>
+            <div>
+              <span>cost</span>&nbsp;&nbsp;&nbsp;<input
+                type=""
+                name=""
+                id="TotalCosts"
+                class="inpu tot__input"
+              />
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <span class="tot__item">items</span>&nbsp;&nbsp;&nbsp;<button
+                onclick="items()"
+                class="inpu"
+              >
+                calculate
+              </button>
+            </div>
+            <div>
+              <span>cost</span>&nbsp;&nbsp;&nbsp;<button
+                onclick="costs()"
+                class="inpu"
+              >
+                calculate
+              </button>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <input
+                type="submit"
+                onclick="sub()"
+                id="submit"
+                class="inpu tot__item sub"
+              />
+            </div>
+            <div>
+              <input
+                type="reset"
+                onclick="rst()"
+                id="reset"
+                class="inpu rset"
+              />
+            </div>
+          </section>
+        </section>
+      </article>
+    </main>
+
+    <script src="biz.js"></script>
+  </body>
+</html>
