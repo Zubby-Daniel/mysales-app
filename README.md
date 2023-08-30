@@ -1,5 +1,5 @@
 # mysales-app
-This is simple sales app with a list of products.
+## This is simple sales app with a list of products.
 
 * When you click on product checkbox, the PRICE will be displayed; and as you input QUANTITY, the COST of the product will be computed for you automatically. The COST is the product of QUANTITY * PRICE.
 
@@ -12,3 +12,9 @@ This is simple sales app with a list of products.
 * You can RESET/REFRESH the App when you're done with your activities there.
 
 * The page is RESPONSIVE. Hence, you can resize your browser to see the different styles.
+
+ 
+## FUTURE IMPROVEMENTS :
+ *I will refactor the code to obey the D.R.Y Principle.
+
+ The "submit" button is not working for now. In the future, I'd like to create a database so that the data will be submitted and stored.
