@@ -14,7 +14,7 @@
 * The page is RESPONSIVE. Hence, you can resize your browser to see the different styles.
 
  
-## FUTURE IMPROVEMENTS :
+## Future Improvements :
  *I will refactor the code to obey the D.R.Y Principle.
 
  The "submit" button is not working for now. In the future, I'd like to create a database so that the data will be submitted and stored.
